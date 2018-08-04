@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER ANIMATIONS -->
+    <!-- JAVASCRIPTS -->
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.js"></script> <!-- FADE GALLERY -->
+	<script type="text/javascript" src="js/jquery.form.js"></script> <!-- FORM AJAX SUBMIT -->
+
+	<!-- IDANGEROUS SWIPER VERSION 4-->
+	<script src="js/swiper.js" type="text/javascript"></script>
+	<link href="js/swiper.css" rel="stylesheet" type="text/css">
+
+    <!-- FANCY BOX VERSION 3 -->
+	<script src="js/fancybox/dist/jquery.fancybox.js" type="text/javascript"></script>
+	<link href="js/fancybox/dist/jquery.fancybox.css" rel="stylesheet" type="text/css">
+
+	<!-- DATE PICKER & TOOLTIP -->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<link href="js/jquery-ui.css" rel="stylesheet" type="text/css">
+
+  <!-- GREENSOCK -->
+    <script src="js/gsap/TweenMax.min.js"></script>
+
+    <!-- SCROLL MAGIC -->
+    <script src="js/ScrollMagic/ScrollMagic.js"></script>
+    <script src="js/ScrollMagic/animation.gsap.js"></script>
+    <script src="js/ScrollMagic/debug.addIndicators.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMUwH-HxWA_Yrc7XtjisiPzCl8XtRgZ2M" async defer></script>
+    <!-- Vue.js Production Version - Optimized for Speed -->
+    <script src="script3.js"></script>
+    <!-- RECAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
+
+    <!-- START OF THE ENTIRE CONTAINER -->
+    <section id="vue__main__container" class="rel">
+
+        <!-- CONTAINER 1 SECTION -->
+        <div id="container__1" class="">
+            <a href="#">
+	      <img src="images/Vue-Logo-1.png" id="vue__logo" class="animate fadeInLeft one">
+	    </a>
+            <div id="vip__signup_box" class="animate3 fadeInDown three">
+                <a href="javascript:scrollToContact();" id="vip__signup" class="flexCenter">VIP SIGN-UP</a>
+            </div>
+            <div id="h1Container" class="animate fadeInUp two">
+                <h1>BRAND NEW <br /> MODERN INDUSTRIAL <br /> APARTMENT HOMES <hr /> FALL 2018</h1>
+            </div>
+    </section>
+    <!-- END CONTAINER 1 SECTION -->
+
+
+
+
+    <!-- CONTAINER 2 SECTION -->
+    <section id="container__2" class="rel flexCenter">
+        <img src="images/vue-1.png" alt="Vue at The Quarter Icons" id="vue__icons">
+    </section>
+    <!-- END CONTAINER 2 SECTION -->
+
+
+    <!-- GOOGLE MAPS -->
+    <div id="googleMaps" class="rel"></div>
+    <!-- NOTE: THE MAP GETS INITIALIZE AT THE END OF THE API LINK @ lback=initMap-->
+
+
+    <!-- CONTAINER 4 SECTION -->
+    <section id="tweenContainer4">
+        <div id="container__4" class="rel">
+            <div id="background4"></div>
+            <div id="h2Container">
+                <h2>WEST <br /> OF <br> MIDTOWN <br /> <hr /> SOUTH <br /> OF <br /> BUCKHEAD</h2>
+            </div>
+            <div id="sceneH3"><img src="images/vue-at-the-quarter-icon.png" alt="Vue at The Quarter Icon" class="rel" id="vueQuarterIcon"></div>
+        </div>
+    </section>
+    <!-- END CONTAINER 4 SECTION -->
+
+
+
+
+
+
+
+    <!-- GALLERY SECTION -->
+    <section id="container__5" class="rel">
+        <div id="gallery">
+            <div class="rel">
+                <div id="galContent1" class="galContents">
+                    <!-- TRIGGER -->
+                    <div id="galObject" class="rel">
+                        <!-- OBJECT TO MOVE -->
+                        <div class="galTitle">Top Golf</div>
+                        <div id="topGolf" class="galText">
+                            {{message}}
+                        </div>
+                    </div>
+                </div>
+                <div id="theMan">
+                    <!-- TRIGGER -->
+                    <img src="images/TopGolf.jpg" id="manImage" alt="Vue at the TR" />
+                    <!-- OBJECT TO MOVE -->
+                </div>
+
+                <div class="rel">
+                    <div id="upsContainer">
+                        <div id="dogTrigger" class="rel">
+                            <!-- TRIGGER -->
+                            <img src="images/WhittierMillPark.jpg" alt="Vue at the TR" id="dogImage" />
+                            <!-- OBJECT TO MOVE -->
+                        </div>
+
+                        <div id="uwsTrigger" class="rel">
+                            <!-- TRIGGER -->
+                            <div id="upperWestside">
+                                <!-- OBJECT TO MOVE -->
+                                Upper
+                                <hr /> West
+                                <hr /> Side
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="galContent2" class="galContents">
+                        <!-- TRIGGER -->
+                        <div id="galContent2Object" class="rel">
+                            <!-- OBJECT TO MOVE -->
+                            <div class="galTitle">Whittier<br />Mill Park</div>
+                            <div id="whittierMillPark" class="galText">
+                                {{message}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rel">
+                    <div id="theGroup">
+                        <!-- TRIGGER -->
+                        <img src="images/ScofflawBrewingCo.jpg" id="theGroup1" alt="Vue at the TR" />
+                        <!-- OBJECT TO MOVE -->
+                    </div>
+
+                    <div id="atlText">
+                        <!-- TRIGGER -->
+                        <div id="atlObject">
+                            <!-- OBJECT TO MOVE -->
+                            ATLANTA
+                        </div>
+                    </div>
+                </div>
+
+                <div id="galContent3" class="galContents">
+                    <div id="galContent3Object" class="rel">
+                        <!-- TRIGGER -->
+                        <div id="wineTasting" class="galTitle">Scofflaw <br />Brewing Co.</div>
+                        <!-- OBJECT TO MOVE -->
+                        <div id="brewingCo" class="galText">
+                            {{message}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END GALLERY SECTION -->
+
+
+
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contactSection">
+        <div id="contactForm" class="rel">
+            <div id="contactFormBox">
+                <div id="vipList">VIP LIST</div>
+                <form name="form" method="POST" action="/?thankyou=true" onsubmit="return onSubmit();">
+                    <input id="name" name="name" type="text" maxlength="30" value="NAME*" onfocus="if(this.value=='NAME*') this.value='';" onblur="if(this.value=='') this.value='NAME*';">
+
+                    <input id="email" name="email" type="text" maxlength="60" value="EMAIL*" onblur="if(this.value=='') this.value='EMAIL*';" onfocus="if(this.value=='EMAIL*') this.value='';">
+
+                    <input id="phone" name="phone" type="text" maxlength="15" value="PHONE*" onfocus="if(this.value=='PHONE*') this.value='';" onblur="if(this.value=='') this.value='PHONE*';">
+
+                    <select id="interested" name="interested">
+												 <option value="studio">Studio</option>
+												 <option value="one bedroom">One Bedroom</option>
+												 <option value="two bedroom">Two Bedroom</option>
+												 <option value="three bedroom">Three Bedroom</option>
+											 </select>
+
+                    <input id="date" name="date" type="text" maxlength="20" value="MOVE-IN DATE" onfocus="if(this.value=='MOVE-IN DATE') this.value='';" onblur="if(this.value=='') this.value='MOVE-IN DATE';">
+
+                    <textarea id="message" name="message" rows="3" maxlength="600" spellcheck="true" onfocus="if(this.value=='MESSAGE') this.value='';" onblur="if(this.value=='') this.value='MESSAGE';">MESSAGE</textarea>
+
+                    <br />
+                    <center>
+                        <div class="g-recaptcha" data-sitekey="6LfdkU8UAAAAAFMz9O8vVo23O_bGY-esjGr3SRkC"></div>
+                    </center>
+
+                    <input type="submit" value="SUBMIT" id="submitBtn" class="submitBtn" name="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+
+
+
+
+
+
+    <!-- START OF FOOTER -->
+    <section id="vue__footer" class="rel">
+        <div id="footerLogo">
+            <img src="images/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div id="wrapper__1">
+            <div id="awesomeSocialMediaIcons">
+                <a href="javascript:coming()">
+					<img src="images/facebook-icon.png" alt="Vue at The Quarter Facebook Icon">
+				</a>
+                <a href="javascript:coming()">
+					<img src="images/instagram-icon.png" alt="Vue at The Quarter Instagram Icon">
+				</a>
+            </div>
+            <div id="quarter__1">
+                <p class="vue__at__the__quarter"> &copy; 2018 Vue at the Quarter</p>
+            </div>
+            <div id="quarter__2">
+                <p class="privacy__policy">
+                    <a href="#privacyPolicy" data-fancybox>Privacy Policy</a>
+                </p>
+            </div>
+            <div id="accessIcons">
+                <img src="images/access.png" alt="Access Icons">
+            </div>
+        </div>
+    </section>
+    <!-- END OF FOOTER -->
+
+    </div>
+    <!-- END OF THE ENTIRE CONTAINER -->
+
+    <!-- PRIVACY POLICY -->
+    <div id="privacyPolicy" style="display:none">
+        <h2>{{privacyPolicy}}</h2>
+        <p>{{paragraphOne}}</p>
+        <p>&nbsp;</p>
+        <h2>{{usage}}</h2>
+        <p>We provide you herein a notice of the types of information that we collect from you and the persons or entities to whom your personal information may be disclosed. Personal information may include name, address, phone number, email address or any other information transmitted by you. We may collect personal information through this Website when registering or requesting information when we ask for contact information. We may use the information to contact you to the extent such contact is permitted by law. In order to provide you with efficient services we may share your personal information with our affiliates and related entities. We may also share your personal information with companies we hire to perform services including data processing, computer software maintenance and development, transaction processing, marketing services and professional, legal or accounting services (“Service Providers”). We require Service Providers to maintain confidentiality of your personal information and limit use of your personal information to the purpose for which it is provided. We will not share your personal information with non-affiliated third parties for marketing purposes. However, we may disclose statistics about visitors to our Website along with specific information about our visitors, provided that no personal information about a specific individual can be identified. Not with standing the foregoing, your personal information may be disclosed to non-affiliated third parties as either permitted by or to comply with applicable laws and regulations. We will, however, offer you the opportunity to “opt out” of having your personal information shared with third parties that are not affiliated with us. If you access the website from a country with strict data protection laws you should be aware that by interacting with the Website your personal information may be sent to us in the United States or other countries. We may provide discussion forums, blogs and other community-oriented features that enable you to post comments and comment on posts by others (“Social Media”). To participate in our Social Media, we require you to register with a valid email address. We may use your email address to contact you regarding your postings or to inquire about your community experience. We may also offer you the opportunity to share your experience or provide you a service via various third-party Social Media websites such as Google, Twitter, Facebook and YouTube. Registration with those services may be separately required.</p>
+        <p>&nbsp;</p>
+        <h2>{{socialMedia}}</h2>
+        <p>We may provide discussion forums, blogs and other community-oriented features that enable you to post comments and comment on posts by others (“Social Media”). To participate in our Social Media, we require you to register with a valid email address. We may use your email address to contact you regarding your postings or to inquire about your community experience. We may also offer you the opportunity to share your experience or provide you a service via various third-party Social Media websites such as Google, Twitter, Facebook and YouTube. Registration with those services may be separately required.</p>
+        <p>&nbsp;</p>
+        <h2>{{changesToPrivacyPolicy}}</h2>
+        <p>{{policyChanges}}</p>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
